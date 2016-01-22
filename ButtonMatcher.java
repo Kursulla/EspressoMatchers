@@ -1,4 +1,4 @@
-package ch.teleboy.matchers;
+package com.eutechpro.matchers;
 
 import android.content.res.Resources;
 import android.graphics.drawable.BitmapDrawable;

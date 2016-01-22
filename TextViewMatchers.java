@@ -1,4 +1,4 @@
-package ch.teleboy.matchers;
+package com.eutechpro.matchers;
 
 import android.graphics.Typeface;
 import android.support.annotation.ColorInt;
