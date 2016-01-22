@@ -39,7 +39,7 @@ public class ButtonMatcher {
 
             @Override
             public void describeTo(Description description) {
-                description.appendText("Compound image with id: " + getResourceName(resources, resourceId));
+                description.appendText("Button is missing compound image with id: " + getResourceName(resources, resourceId));
             }
 
 
@@ -64,7 +64,7 @@ public class ButtonMatcher {
 
             @Override
             public void describeTo(Description description) {
-                description.appendText("Compound image with id: " + getResourceName(resources, resourceId));
+                description.appendText("Button is missing compound  image with id: " + getResourceName(resources, resourceId));
             }
         };
     }
@@ -87,7 +87,7 @@ public class ButtonMatcher {
 
             @Override
             public void describeTo(Description description) {
-                description.appendText("Compound image with id: " + getResourceName(resources, resourceId));
+                description.appendText("Button is missing compound  image with id: " + getResourceName(resources, resourceId));
             }
         };
     }
@@ -110,7 +110,7 @@ public class ButtonMatcher {
 
             @Override
             public void describeTo(Description description) {
-                description.appendText("Compound image with id: " + getResourceName(resources, resourceId));
+                description.appendText("Button is missing compound  image with id: " + getResourceName(resources, resourceId));
             }
         };
     }
@@ -123,12 +123,12 @@ public class ButtonMatcher {
             protected boolean matchesSafely(View view) {
                 this.resources = view.getResources();
                 this.buttonId = view.getId();
-                return !view.isEnabled();
+                return view.isEnabled();
             }
 
             @Override
             public void describeTo(Description description) {
-                description.appendText("Button with id "+getResourceName(resources, buttonId));
+                description.appendText("Button with id "+buttonId+" should be enabled!");
             }
         };
     }
