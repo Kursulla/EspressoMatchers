@@ -36,10 +36,6 @@ public class ImageViewMatcher {
 
 
     private static boolean match(View view, int resourceId) {
-        if (!(view instanceof Button)) {
-            return false;
-        }
-
         Drawable drawableInImageView = ((ImageView) view).getDrawable();
         if (drawableInImageView == null) {
             return false;
